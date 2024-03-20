@@ -1,7 +1,7 @@
 document.getElementById('find-movie-btn').addEventListener('click', function() {
     const description = document.getElementById('movie-description').value;
     if (description) {
-        fetch('http://127.0.0.1:5050/get_movie', {
+        fetch('https://find-a-movie-rkxhgscj6q-uc.a.run.app/get_movie', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
