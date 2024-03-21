@@ -86,11 +86,15 @@ Find-A-Movie is a web application that matches users with movies that closely al
 
 /
 ├── chroma_data/ # Vector database for movie descriptions
+
 ├── website/ # Static files for the frontend (HTML/CSS/JS)
+
 ├── Dockerfile # Container configuration for the Flask API
+
 ├── movies.py # Core recommendation algorithms
+
 └── python_api.py # Flask API routes and server configuration
-/
+
 
 ## Getting Started
 
