@@ -4,3 +4,4 @@ pandas
 Streamlit
 sentence-transformers
 chromadb
+protobuf==3.19.0
