@@ -7,7 +7,7 @@ document.getElementById('find-movie-btn').addEventListener('click', function() {
         loadingElement.style.display = 'block'; // Show loading message
         resultElement.innerHTML = ''; // Clear previous results if any
 
-        fetch('https://find-a-movie-rkxhgscj6q-uc.a.run.app/get_movie', {
+        fetch('http://127.0.0.1:8080/get_movie', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

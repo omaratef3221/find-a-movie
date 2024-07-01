@@ -17,6 +17,7 @@ def get_movie():
 
     movie_title = "Movie Name: " + movies[0].metadata["title"]
     movie_description = "Movie Description: " + movies[0].page_content
+    
     return jsonify({'Movie_Title': movie_title,
                     'Movie_Description': movie_description})
 
