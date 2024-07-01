@@ -1,6 +1,6 @@
 langchain
 langchain_community
 pandas
-sqlite3
+libsqlite3-dev
 sentence-transformers
 chromadb
