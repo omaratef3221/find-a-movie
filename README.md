@@ -40,7 +40,7 @@ Find-A-Movie is a web application that matches users with movies that closely al
 
 ## Project Structure
 
-\`\`\`
+```
 /
 ├── chroma_data/         # Vector database for movie descriptions
 ├── website/             # Static files for the frontend (HTML/CSS/JS)
@@ -48,7 +48,7 @@ Find-A-Movie is a web application that matches users with movies that closely al
 ├── movies.py            # Core recommendation algorithms
 ├── python_api.py        # Flask API routes and server configuration
 └── streamlit_app.py     # Streamlit application
-\`\`\`
+```
 
 ## Getting Started
 
@@ -60,20 +60,20 @@ Find-A-Movie is a web application that matches users with movies that closely al
 ### Installation
 
 1. Clone the repository:
-   \`\`\`sh
-   git clone https://github.com/omaratef3221/find-a-movie.git
+   ```shell
+   ssh git clone https://github.com/omaratef3221/find-a-movie.git
    cd find-a-movie
-   \`\`\`
+   ```
 
 2. Install the required Python packages:
-   \`\`\`sh
+   ```shell
    pip install Flask gunicorn pandas langchain flask-cors sentence-transformers chromadb langchain-community
-   \`\`\`
+   ```
 
 3. Run the Streamlit app:
-   \`\`\`sh
+   ```shell
    streamlit run streamlit_app.py
-   \`\`\`
+   ```
 
 4. For Flask API, navigate to the \`website/\` folder and change the API address in the JavaScript files to \`localhost\`.
 
@@ -92,14 +92,14 @@ To find a movie, simply:
 To deploy using Docker:
 
 1. Build the Docker image:
-   \`\`\`sh
+   ```shell
    docker build -t find-a-movie .
-   \`\`\`
+   ```
 
 2. Run the Docker container:
-   \`\`\`sh
+   ```shell
    docker run -p 5000:5000 find-a-movie
-   \`\`\`
+   ```
 
 ## Contributing
 
