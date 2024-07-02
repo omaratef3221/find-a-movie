@@ -5,6 +5,10 @@ from langchain_community.document_loaders import DataFrameLoader
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 class movie_rag:
     def __init__(self, df = None, device = None, main_column = "description", embeddings = "hf", REVIEWS_CHROMA_PATH = "chroma_data"):
         self.df = df
