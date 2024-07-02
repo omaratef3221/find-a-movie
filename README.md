@@ -3,7 +3,7 @@
 
 Welcome to the Find-A-Movie application, a powerful tool designed to recommend movies based on textual descriptions. Our app harnesses cutting-edge natural language processing technologies (RAG - Retrieval Augmented Generation) to provide an intuitive movie discovery experience.
 
-Explore our live application: [Find-A-Movie](https://find-a-movie-f506a.web.app/)
+Explore our live application: [Find-A-Movie](https://find-a-movie.streamlit.app/)
 
 ## Table of Contents
 
