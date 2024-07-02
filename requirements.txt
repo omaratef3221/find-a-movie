@@ -4,3 +4,4 @@ pandas
 sentence-transformers
 chromadb
 openpyxl
+pysqlite3-binary
