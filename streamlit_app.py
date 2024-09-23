@@ -20,7 +20,7 @@ def main():
 
     # movie_title = "Movie Name: " + movies[0].metadata["title"]
     # movie_description = "Movie Description: " + movies[0].page_content
-    
+    print(movies)
     if st.button("Get the closest movies.", ):
         for i in movies:
             st.success(f"Movie Name: {i.metadata['title']}", icon= "🎬")

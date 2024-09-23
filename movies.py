@@ -18,12 +18,12 @@ class movie_rag:
             self.device = device
         else:
             self.device = "cpu"
-        if df:
+        try:
             self.df = self.df.dropna()
             self.df = self.df.drop_duplicates()
-        else:
+        except:
             pass
-        
+
         if embeddings == "hf":
             self.embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2",
                             model_kwargs={'device': self.device})
@@ -46,7 +46,8 @@ class movie_rag:
         return reviews_vector_db
     
     def get_movie(self, description, vector_db, k = 5):
-        return vector_db.similarity_search(description, k=k)
+        s =  vector_db.similarity_search(description, k=k)
+        return s
     
                     
 
