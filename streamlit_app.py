@@ -11,7 +11,7 @@ movie_obj = movie_rag(REVIEWS_CHROMA_PATH = 'chroma_data', device='cpu')
 vector_db = movie_obj.load_vector_database()
 
 def main():
-    st.title("Find My Movie!")
+    st.title("Find My Movie App!")
     amount = st.number_input("Enter the number of movies:", min_value=1, value=5, step=1)
     movie_description = st.text_input("Write the movie description", value="")
 
